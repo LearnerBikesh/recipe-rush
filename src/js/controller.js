@@ -54,6 +54,7 @@ const constrolSearchResult = async function () {
     paginationView.render(model.state.search);
   } catch (e) {
     console.log(e);
+    resultView.renderError(e.message);
   }
 };
 
